@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #d4af37;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 0 0 10px #d4af37, 0 0 20px #d4af37, 0 0 30px #d4af37, 0 0 40px #d4af37;
+}
+
+.tagline {
+    margin-bottom: 2em;
+    font-size: 1.5em;
+    text-shadow: 0 0 10px #d4af37, 0 0 20px #d4af37, 0 0 30px #d4af37, 0 0 40px #d4af37;
+}
+
+.purchase-btn {
+    border: none;
+    padding: 1em 2em;
+    color: #000;
+    background-color: #37d490;
+    font-size: 1.2em;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px 5px #1bece9;
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+}

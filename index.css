@@ -148,7 +148,7 @@ a.link:hover::before {
 
 .footer-section ul li a:hover {
     color: #f5f5f5;
-    transform: scale(1.2);  /* Make the link 20% larger when hovered over */
+    transform: scale(1.5);  /* Make the link 20% larger when hovered over */
 }
 
 .footer-section ul li a img {

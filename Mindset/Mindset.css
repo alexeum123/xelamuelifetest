@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Purple */
+    color: #ffffff; /* Gold */
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    font-size:larger;
+}
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 0 0 10px #9900ff, 0 0 20px #9900ff, 0 0 30px #9900ff, 0 0 40px #9900ff; /* Shades of Gold */
+}
+
+.tagline {
+    margin-bottom: 2em;
+    font-size: 1.5em;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff; /* Shades of Purple */
+}
+
+.purchase-btn {
+    border: none;
+    padding: 1em 2em;
+    color: #ffffff; /* White */
+    background-color: rgb(199, 184, 48); /* Red */
+    font-size: 1.2em;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    border-radius: 10px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px 10px #ffffff; /* Red */
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+}

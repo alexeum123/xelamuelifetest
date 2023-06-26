@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Purple */
+    color: #6200ff; /* Gold */
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    font-size:5em;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+    text-shadow: 0 0 10px #362ad4, 0 0 20px #362ad4, 0 0 30px #362ad4, 0 0 40px #362ad4; /* Shades of Gold */
+}
+
+

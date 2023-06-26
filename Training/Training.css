@@ -1,10 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #000;
-    color: #d4af37;
+    background-color: #000000; /* Dark Blue */
+    color: #ffffff; /* White */
     font-family: Arial, sans-serif;
     overflow: hidden;
+    font-size:larger;
 }
 
 .hero {
@@ -18,23 +19,24 @@ body {
 .title {
     font-size: 3em;
     font-weight: bold;
-    text-shadow: 0 0 10px #d4af37, 0 0 20px #d4af37, 0 0 30px #d4af37, 0 0 40px #d4af37;
+    text-shadow: 0 0 10px #F0134D, 0 0 20px #FF4E50, 0 0 30px #F0134D, 0 0 40px #FF4E50; /* Shades of Red */
 }
 
 .tagline {
     margin-bottom: 2em;
     font-size: 1.5em;
-    text-shadow: 0 0 10px #d4af37, 0 0 20px #d4af37, 0 0 30px #d4af37, 0 0 40px #d4af37;
+    text-shadow: 0 0 10px #1FA2FF, 0 0 20px #12D8FA, 0 0 30px #1FA2FF, 0 0 40px #12D8FA; /* Shades of Blue */
 }
 
 .purchase-btn {
     border: none;
     padding: 1em 2em;
-    color: #000;
-    background-color: #37d490;
+    color: #ffffff; /* White */
+    background-color: rgb(48, 199, 48); /* Red */
     font-size: 1.2em;
     cursor: pointer;
     animation: pulse 2s infinite;
+    border-radius: 10px;
 }
 
 @keyframes pulse {
@@ -45,7 +47,7 @@ body {
 
     50% {
         transform: scale(1.05);
-        box-shadow: 0 0 20px 5px #1bece9;
+        box-shadow: 0 0 25px 10px #ffffff; /* Red */
     }
 
     100% {

@@ -1,11 +1,43 @@
 body {
     margin: 0;
-    padding: 0;
-    background-color: #000000; /* Dark Blue */
-    color: #ffffff; /* White */
-    font-family: Arial, sans-serif;
     overflow: hidden;
+    height: 100vh;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
     font-size:larger;
+}
+
+.stars, .stars2, .stars3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+}
+
+.stars {
+    z-index: 1;
+    animation: move-background linear 200s infinite;
+}
+
+.stars2 {
+    z-index: 2;
+    animation: move-background linear 150s infinite;
+}
+
+.stars3 {
+    z-index: 3;
+    animation: move-background linear 100s infinite;
+}
+
+@keyframes move-background {
+    from {background-position: 0 0;}
+    to {background-position: 10000px 5000px;}
 }
 
 .hero {
@@ -14,18 +46,19 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    z-index: 4;
 }
 
 .title {
     font-size: 3em;
     font-weight: bold;
-    text-shadow: 0 0 10px #F0134D, 0 0 20px #FF4E50, 0 0 30px #F0134D, 0 0 40px #FF4E50; /* Shades of Red */
+    text-shadow: 0 0 10px #F0134D, 0 0 20px #FF4E50, 0 0 30px #F0134D, 0 0 40px #FF4E50;  /* Shades of Gold */
 }
 
 .tagline {
     margin-bottom: 2em;
     font-size: 1.5em;
-    text-shadow: 0 0 10px #1FA2FF, 0 0 20px #12D8FA, 0 0 30px #1FA2FF, 0 0 40px #12D8FA; /* Shades of Blue */
+    text-shadow: 0 0 10px #1FA2FF, 0 0 20px #12D8FA, 0 0 30px #1FA2FF, 0 0 40px #12D8FA;/* Shades of Purple */
 }
 
 .purchase-btn {
@@ -47,7 +80,7 @@ body {
 
     50% {
         transform: scale(1.05);
-        box-shadow: 0 0 25px 10px #ffffff; /* Red */
+        box-shadow:  0 0 25px 10px #ffffff;/* Red */
     }
 
     100% {

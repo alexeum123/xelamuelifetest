@@ -174,8 +174,15 @@ a.link:hover::before {
 
 
 
-/* Media Query for Footer Vertical Layout */
 @media (max-width: 600px) {
+    body {
+        padding-bottom: 300px; /* Increase this value as per your need */
+    }
+
+    .footer {
+        bottom: -300px; /* This should match the body's padding-bottom */
+    }
+
     .footer-container {
         flex-direction: column;
         align-items: center;

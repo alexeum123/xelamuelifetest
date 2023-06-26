@@ -135,16 +135,30 @@ a.link:hover::before {
     max-height: 100px;
 }
 
+.footer-section ul {
+    list-style: none;
+}
+
 .footer-section ul li a {
     color: #fff;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;  /* Added 'all' to apply transition to all properties including transform */
     text-decoration: none; 
+    display: inline-block;  /* Needed to apply transform effects to inline elements */
 }
 
 .footer-section ul li a:hover {
     color: #f5f5f5;
+    transform: scale(1.2);  /* Make the link 20% larger when hovered over */
 }
 
+.footer-section ul li a img {
+    width: 32px;   /* adjust as needed */
+    height: 32px;  /* adjust as needed */
+}
+
+.social-section {
+    display:inline-block;
+}
 
 
 /* Media Query for Footer Vertical Layout */

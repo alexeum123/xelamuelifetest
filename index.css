@@ -176,15 +176,31 @@ a.link:hover::before {
 
 @media (max-width: 600px) {
     body {
-        padding-bottom: 300px; /* Increase this value as per your need */
+        padding-bottom: 80vh;
+    }
+    .maintitle {
+        padding-top: 10vh;
+        margin-top: 0vw;
+
     }
 
     .footer {
-        bottom: -300px; /* This should match the body's padding-bottom */
+        bottom: -300px;
     }
 
     .footer-container {
         flex-direction: column;
         align-items: center;
     }
+
+    .footer-section,
+    .footer-image {
+        margin-top: 2em; /* Add space on top of each footer-section when on mobile */
+        margin-bottom: 2em; /* Add space at the bottom of each footer-section when on mobile */
+    }
 }
+
+
+
+
+

@@ -88,3 +88,10 @@ body {
         box-shadow: none;
     }
 }
+
+
+@media (max-width: 600px) {
+    .hero {
+        top: 43vh; /* adjust this value to move the hero section up or down */
+    }
+}

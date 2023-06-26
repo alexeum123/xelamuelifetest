@@ -6,18 +6,23 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: #f5f5f5;
+    background: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow: auto;
+    position: relative;
+    padding-bottom: 200px; /* Height of the footer */
 }
 
 .maintitle {
+    padding-top: 14vh;
+    margin-top: 6.5vw;
     margin-bottom: 2.3em;
 }
+
 .maintitle h1 {
     text-align: center;
     font-size: 3em;
@@ -27,7 +32,6 @@ body {
 
 .maintitle p {
     margin: 0;
-    
 }
 
 .link-container {
@@ -38,6 +42,7 @@ body {
     align-items: center;
     gap: 1em;
     padding: 2em;
+    padding-bottom: 26vh;
 }
 
 a.link {
@@ -74,4 +79,78 @@ a.link::before {
 
 a.link:hover::before {
     left: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 2em;
+    position: absolute;
+    width: 100%;
+    bottom: -200px; /* Keep it out of sight initially */
+    transition: all 0.5s ease;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+.footer-section,
+.footer-image {
+    flex: 1;
+    text-align: center;
+    margin: 0 1em;
+    transition: all 0.3s ease;
+}
+
+.footer-section h2:hover,
+.footer-section p:hover,
+.footer-section ul:hover,
+.footer-image img:hover {
+    transform: scale(1.05);
+}
+
+.footer-image img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    transition: color 0.3s ease;
+    text-decoration: none; 
+}
+
+.footer-section ul li a:hover {
+    color: #f5f5f5;
+}
+
+
+
+/* Media Query for Footer Vertical Layout */
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }

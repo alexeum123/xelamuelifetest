@@ -3,8 +3,31 @@
 body {
   font-family: 'Roboto Condensed', sans-serif;
   margin: 0;
-  background: #eee;
-  height: auto;
+  height: 100vh;
+  background-size: 400% 400%;
+  background-image: linear-gradient(45deg, #ee7752, #e73c7e, #e73c7e, #23a6d5, #23a6d5, #23d5ab, #23d5ab, #ee7752, #ee7752);
+  animation: gradientShift 10s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+
+#images {
+  background-color: #d3d3d3;
+}
+
+.title {
+  background-color: #d3d3d3;
 }
 
 h1 {

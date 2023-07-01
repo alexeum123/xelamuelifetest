@@ -285,13 +285,15 @@ main {
 }
 
 #landing {
+
   background: #fff;
+
 }
 
 #landing-text {
   display: flex;
   flex: 0 1 40vw;
-  height: 50vh;
+  height: auto;
   justify-content: center;
   align-items: center;
   text-align: center;

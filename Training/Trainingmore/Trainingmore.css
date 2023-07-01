@@ -4,20 +4,17 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   margin: 0;
   height: 100vh;
-  background-size: 400% 400%;
+  background-size: 600% 600%;
   background-image: linear-gradient(45deg, #ee7752, #e73c7e, #e73c7e, #23a6d5, #23a6d5, #23d5ab, #23d5ab, #ee7752, #ee7752);
-  animation: gradientShift 10s ease infinite;
+  animation: gradientShift 5s ease infinite;
 }
 
-@keyframes gradientShift {
+@keyframes gradient {
   0% {
     background-position: 0% 0%;
   }
-  50% {
-    background-position: 100% 100%;
-  }
   100% {
-    background-position: 0% 0%;
+    background-position: 100% 0%;
   }
 }
 

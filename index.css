@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: 'Roboto', sans-serif;
     background: rgb(255, 255, 255);
@@ -25,7 +26,7 @@ body {
 
 .maintitle h1 {
     text-align: center;
-    font-size: 3em;
+    font-size: 2.7em;
     color: #303030;
     margin-bottom: 0.2em;
 }

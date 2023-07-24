@@ -285,6 +285,31 @@ footer h3 {
   margin-bottom: 0;
 }
 
+@media only screen and (max-width: 480px) {
+  .btn:hover {
+    color: #fff;
+    font-size: 1rem;
+    border-color: #fff;
+    background: #02e65d;
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+  }
+  .btn:hover:after {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #landing-text-inner {
+    margin-bottom: 50px;
+  }
+
+  .btn2 {
+    width: 80%;
+  }
+
+
+}
+
+
 /* Screen Sizes 500px and Up */
 @media (min-width: 500px) {
   #landing {

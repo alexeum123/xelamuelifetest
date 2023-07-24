@@ -75,11 +75,21 @@ main {
 }
 
 #landing-image {
-  background: url(https://source.unsplash.com/De8wMYoSSBc);
+  background: url(/images/cbum1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 50vh;
+  flex: 0 1 60vw;
+  margin: 0;
+}
+
+#landing-image2 {
+  background: url("/images/dldl4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
   flex: 0 1 60vw;
   margin: 0;
 }
@@ -260,6 +270,11 @@ main {
   width: 30%
 }
 
+#logo2 {
+  padding-top: 15px;
+  width: 30%
+}
+
 #header h2 {
   border-left: dotted 1px #fff;
   border-right: dotted 1px #fff;
@@ -307,6 +322,32 @@ footer h3 {
 
   .btn2 {
     width: 80%;
+  }
+
+  
+  #landing-image {
+    height: 60vh;
+  }
+  #landing-image2 {
+    height: 60vh;
+  }
+
+  #logo {
+      padding-top: 0px;
+      margin-top: 0px;
+      padding-left:15.5vw;
+      width: 60%;
+  }
+  #logo2 {
+    width: 0%;
+
+  }
+  #header3 {
+    
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
 

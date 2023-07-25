@@ -34,7 +34,8 @@ main {
   max-width: 1100px;
   margin: auto;
   box-shadow: 40px 0px 40px #81e4ff,
-    -40px 0px 40px #81e4ff;
+    -40px 0px 40px #81e4ff,
+    0px 20px 40px #81e4ff;
 }
 
 #title1 {
@@ -325,16 +326,82 @@ main {
   color: white;
 }
 
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  margin: auto;
-  color: #ffffff;
+.footer {
+  margin-top:40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: #fff;
+  padding: 2em;
+  position: absolute;
+  width: 90%;
+
+  transition: all 0.5s ease;
 }
 
-footer h3 {
-  font-size: 3rem;
-  margin-bottom: 0;
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+
+.footer-section,
+.footer-image {
+  flex: 1;
+  text-align: center;
+  margin: 0 1em;
+  transition: all 0.3s ease;
+}
+
+.footer-section h2:hover,
+.footer-section p:hover,
+.footer-section ul:hover,
+.footer-image img:hover {
+  transform: scale(1.05);
+}
+
+.footer-image img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  transition: all 0.3s ease;  /* Added 'all' to apply transition to all properties including transform */
+  text-decoration: none; 
+  display: inline-block;  /* Needed to apply transform effects to inline elements */
+}
+
+.footer-section ul li a:hover {
+  color: #f5f5f5;
+  transform: scale(1.5);  /* Make the link 20% larger when hovered over */
+}
+
+.footer-section ul li a img {
+  width: 32px;   /* adjust as needed */
+  height: 32px;  /* adjust as needed */
+}
+
+.social-section {
+  display:inline-block;
+}
+
+.social-section ul {
+  display: flex;
+  list-style-type: none; /* Remove bullet points */
+  justify-content: space-between; /* Optional: add some space between icons */
+  padding: 0; /* Remove padding */
+}
+
+/* Adjustments for each list item */
+.social-section ul li {
+  margin-right: 10px; /* Optional: add some space at the right of each item */
 }
 
 @media only screen and (max-width: 480px) {
@@ -401,6 +468,17 @@ footer h3 {
     text-align: center;
   }
 
+
+.footer-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section,
+.footer-image {
+    margin-top: 2em; /* Add space on top of each footer-section when on mobile */
+    margin-bottom: 2em; /* Add space at the bottom of each footer-section when on mobile */
+}
 
 }
 

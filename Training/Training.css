@@ -17,7 +17,7 @@ body {
     width: 100%;
     height: 100%;
     display: block;
-    background: url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    background: url("/images/starstt.png") repeat top center;
 }
 
 .stars {

@@ -25,7 +25,7 @@
           <a href="https://buy.stripe.com/00g6sj0QrajO9BS8wy"class="btn" id="slide">
             Checkout
           </a>
-          <a href="#images" class="btn" id="view-work">
+          <a href="#images" class="btn2" id="view-work">
             Preview
           </a>
           
@@ -82,10 +82,11 @@
                 <br> - Basic Nutrition Guide
                 <br> - Mindset, Recovery, & Longetivity
                 </p>
-                
+
+                <!--      add program           
                 <a href="#images" class="btn2" id="view-work">
                     Not sure? Try our free content
-                </a>
+                </a> -->
 
             </div>
             <img src="/images/xelamue logo full black.jpeg" alt="" id = "logo2">
@@ -167,17 +168,46 @@
         <div class="footer-section">
             <h2>Contact</h2>
             <br>
-            <p>xelamuelife@gmail.com</p>
+            <a style = "text-decoration: none; color: white;" href = "mailto:xelamuelife@gmail.com">xelamuelife@gmail.com</a>
         </div>
     </div>
     </div>
 
   </footer>
 
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 500, function(){
+     
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+
+  <!-- Continue with the original scripts -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="/Training/Trainingmore/Trainingmore.js"></script>
+
 </body>
 
 </html>

@@ -52,13 +52,13 @@ body {
 .title {
     font-size: 3em;
     font-weight: bold;
-    text-shadow: 0 0 10px #F0134D, 0 0 20px #FF4E50, 0 0 30px #F0134D, 0 0 40px #FF4E50;  /* Shades of Gold */
+    text-shadow: 0 0 10px #326fe1, 0 0 20px #326fe1, 0 0 30px #326fe1, 0 0 40px #326fe1;  /* Shades of Gold */
 }
 
 .tagline {
     margin-bottom: 2em;
     font-size: 1.5em;
-    text-shadow: 0 0 10px #1FA2FF, 0 0 20px #12D8FA, 0 0 30px #1FA2FF, 0 0 40px #12D8FA;/* Shades of Purple */
+    text-shadow: 0 0 10px #e1d332, 0 0 20px #e1d332, 0 0 30px #e1d332, 0 0 40px #e1d332;/* Shades of Purple */
 }
 
 .purchase-btn {

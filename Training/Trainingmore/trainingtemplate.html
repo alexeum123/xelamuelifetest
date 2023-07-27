@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workout Program Creator</title>
+  <link rel="stylesheet" type="text/css" href="templatestyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">Simple Training Program</h1>
+
+    <form id="workout-form">
+      <div class="form-section">
+        <h2 class="form-heading">Days to train in a week:</h2>
+        <div class="radio-group">
+          <label class="radio-label"><input type="radio" name="days" value="3">3</label>
+          <label class="radio-label"><input type="radio" name="days" value="4">4</label>
+          <label class="radio-label"><input type="radio" name="days" value="5">5</label>
+          <label class="radio-label"><input type="radio" name="days" value="6">6</label>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2 class="form-heading">Training Focus:</h2>
+        <div class="button-group">
+          <button type="button" class="focus-button" id="upper-body">Upper Body</button>
+          <button type="button" class="focus-button" id="lower-body">Lower Body</button>
+          <button type="button" class="focus-button" id="full-body">Full Body</button>
+        </div>
+      </div>
+
+
+    <label><input type="checkbox" name="muscles" value="quads">Quads</label>
+    <label><input type="checkbox" name="muscles" value="hamstrings">Hamstrings<br></label>
+    <label><input type="checkbox" name="muscles" value="chest">Chest</label>
+    <label><input type="checkbox" name="muscles" value="back">Back</label>
+    <label><input type="checkbox" name="muscles" value="fshoulder">Front Shoulder/Upper Chest<br></label>
+    <label><input type="checkbox" name="muscles" value="lshoulder">Side/Rear Delt</label>
+    <label><input type="checkbox" name="muscles" value="biceps">Biceps</label>
+    <label><input type="checkbox" name="muscles" value="triceps">Triceps<br></label>
+    <label><input type="checkbox" name="muscles" value="abs">Abs</label>
+    <br>
+    <button type="button" class = "focus-button" id="clear-muscles" style = "background-color: rgb(255, 80, 26);"">Clear Muscle Selections</button>
+
+
+ 
+    <h2>Preference:</h2>
+    <label><input type="radio" name="preference" value="high-volume">High Volume<br></label>
+    <label><input type="radio" name="preference" value="high-intensity">High Intensity<br></label>
+
+    <button type="submit" class = "focus-button" style = "background-color: rgb(46, 195, 46);">Create Workout</button>
+    <br><br>
+    <div id="error-message" style="color:red;"></div>
+
+  </form>
+
+  <div id="workout-plan" class="workout-plan"></div>
+</div>
+
+
+<footer>
+
+
+    <div id="footer" class="footer">
+      <div class="footer-container">
+          <div class="footer-image">
+            <button class="purchase-btn" onclick="window.location.href = '/index.html';">
+              <img style = "width: 40vh" src="/images/xelamue logo full black.jpeg" alt="Footer Image">
+            </button>
+              
+          </div>
+  
+          
+          <div class="footer-section">
+              <h2 style = "text-align: left">About Us</h2>
+              <br>
+              <p style = "text-align: left">Xelamue Life was created to help people achieve their health and fitness 
+                  goals anywhere. Xelamue Life offers programs, coaching, and a community
+                  for individuals to learn and grow.</p>
+          </div>
+  
+  
+  
+          <div class="footer-section">
+              <h2>Socials<br><br></h2>
+              <div class = "social-section">
+                  <ul>
+                    <li><a href="https://www.instagram.com/xelamue/"><img src="/images/ig.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCR8v82BADbtGrNrFx3kzcTw"><img src="/images/yt.png" alt="YouTube"></a></li>
+                    <li><a href="https://www.tiktok.com/@xelamuelife"><img src="/images/tiktoklogo.png" alt="TikTok"></a></li>
+                  </ul>
+              </div>
+  
+  
+  
+          </div>
+          <div class="footer-section">
+              <h2>Interested In Online Coaching?</h2>
+              
+              <br>
+              <a style = "text-decoration: none; color: white;" href = "mailto:xelamuelife@gmail.com">xelamuelife@gmail.com</a>
+          </div>
+      </div>
+      </div>
+  
+    </footer>
+    
+
+<script src="templatemain.js"></script>
+</body>
+</html>

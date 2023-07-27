@@ -58,7 +58,7 @@ body {
 .tagline {
     margin-bottom: 2em;
     font-size: 1.5em;
-    text-shadow: 0 0 10px #e1d332, 0 0 20px #e1d332, 0 0 30px #e1d332, 0 0 40px #e1d332;/* Shades of Purple */
+    text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow;/* Shades of Purple */
 }
 
 .purchase-btn {

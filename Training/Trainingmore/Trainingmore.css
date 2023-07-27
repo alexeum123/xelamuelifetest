@@ -404,6 +404,11 @@ main {
   margin-right: 10px; /* Optional: add some space at the right of each item */
 }
 
+.buttondrop {
+  margin-inline: 40px;
+}
+
+
 @media only screen and (max-width: 480px) {
 
   /* #landing {
@@ -416,6 +421,10 @@ main {
     75% {background: rgb(11, 31, 35);}
     100% {background: rgb(0, 0, 0);}
   } */
+
+  .buttondrop {
+    margin-inline: 0px;
+  }
 
   html, body {
     max-width: 100%;

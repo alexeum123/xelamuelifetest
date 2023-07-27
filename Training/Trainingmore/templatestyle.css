@@ -1,0 +1,204 @@
+/* Global Styles */
+body {
+    background: #fff;
+    color: #000;
+    font-family: 'San Francisco', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+    max-width: 100%;
+  }
+  html {
+    max-width: 100%;
+  }
+  
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 4em;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #2872fc, 0 0 20px #2872fc, 0 0 30px #2872fc, 0 0 40px #2872fc;  /* Shades of Gold */
+}
+
+  
+  /* Form Styles */
+  .form-section {
+    margin-bottom: 10px;
+  }
+  
+  .form-heading {
+    margin-bottom: 10px;
+    font-size: 2.1em;
+  }
+  
+  .radio-group,
+  .checkbox-group {
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+  
+  .radio-label,
+  .checkbox-label {
+    flex: 0 0 45%;
+    margin-right: 20px;
+    font-size: 1em;
+  }
+  
+  /* Button Styles */
+  .focus-button,
+  .clear-button,
+  .submit-button {
+    border: none;
+    background: #007AFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 5px;
+    font-size: 1em;
+  }
+  
+  .focus-button:hover,
+  .clear-button:hover,
+  .submit-button:hover {
+    background: #0051d4;
+  }
+  
+  /* Workout Plan Styles */
+  .workout-plan {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 40px;
+  }
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 480px) {
+    body {
+      padding: 10px;
+    }
+  
+    .radio-label,
+    .checkbox-label {
+      flex: 0 0 100%;
+    }
+  
+    .focus-button,
+    .clear-button,
+    .submit-button {
+      margin: 5px 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+
+  
+.footer {
+    margin-top:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 2em;
+    position: absolute;
+    max-width: 100%;
+  
+    transition: all 0.5s ease;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+  }
+  
+  .footer-section,
+  .footer-image {
+    flex: 1;
+    text-align: center;
+    margin: 0 1em;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-section h2:hover,
+  .footer-section p:hover,
+  .footer-section ul:hover,
+  .footer-image img:hover {
+    transform: scale(1.05);
+  }
+  
+  .footer-image img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    transition: all 0.3s ease;  /* Added 'all' to apply transition to all properties including transform */
+    text-decoration: none; 
+    display: inline-block;  /* Needed to apply transform effects to inline elements */
+  }
+  
+  .footer-section ul li a:hover {
+    color: #f5f5f5;
+    transform: scale(1.5);  /* Make the link 20% larger when hovered over */
+  }
+  
+  .footer-section ul li a img {
+    width: 32px;   /* adjust as needed */
+    height: 32px;  /* adjust as needed */
+  }
+  
+  .social-section {
+    display:inline-block;
+  }
+  
+  .social-section ul {
+    display: flex;
+    list-style-type: none; /* Remove bullet points */
+    justify-content: space-between; /* Optional: add some space between icons */
+    padding: 0; /* Remove padding */
+  }
+  
+  /* Adjustments for each list item */
+  .social-section ul li {
+    margin-right: 10px; /* Optional: add some space at the right of each item */
+  }
+
+  @media (max-width: 600px) {
+
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section,
+    .footer-image {
+      
+        margin-top: 2em; /* Add space on top of each footer-section when on mobile */
+        margin-bottom: 2em; /* Add space at the bottom of each footer-section when on mobile */
+    }
+}
+

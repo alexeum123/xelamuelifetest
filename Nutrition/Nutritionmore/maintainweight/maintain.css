@@ -4,9 +4,13 @@
 }
 
 body {
-  background-color: #F2F2F7;
-  color: #000000;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
 }
 
 h1 {
@@ -56,19 +60,11 @@ input[type="submit"]:hover {
 
 
 .maincontainer {
-  width: 100%;
-  display: grid;
-  justify-content: center;
-  margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  max-width: 50vw; /* change this value according to your design */
 }
 
-
 .usersection {
-  width: 40vw;
+  width: 40vw;;
 }
 
 
@@ -82,6 +78,17 @@ input[type="submit"]:hover {
 
 .radiog {
   display: flex;
+}
+
+#hiddenText {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 15px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 
@@ -149,4 +156,61 @@ input[type="submit"]:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   text-align: center;
   margin-top: 20px;
+}
+
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: white;
+  
+  }
+  .maincontainer, .usersection {
+    width: 90vw;
+    max-width: 90vw;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input[type="number"], select, input[type="submit"] {
+    font-size: 12px;
+  }
+  .usersection {
+    padding-top: 25vw;
+  }
+  #results {
+    padding-top: 50vw;
+    margin-top: 15px;
+    padding: 5px;
+  }
+
+  #hiddenText {
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .resultsContainer {
+    padding: 10px;
+  }
+
+  .resultsTitle {
+    font-size: 20px;
+  }
+
+  .maintenanceCalories, .bmr, .activityLevels, .macronutrientSplits {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .revealButtonContainer {
+    width: 90%;
+    padding: 5px;
+    margin-top: 15px;
+  }
 }

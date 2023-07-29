@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #1c1c1e;
+    font-size: 3.4vw;
+}
+
+.button-container {
+    display: grid;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.weight-button {
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.3s;
+ 
+}
+
+.lose {
+    background-color: #7c1515;
+    width: 18vw;
+    height: 3vw;
+
+}
+
+.maintain {
+    margin-top:15px;
+    background-color: #16ac66;
+    width: 18vw;
+    height: 3vw;
+}
+
+.gain {
+    margin-top:15px;
+    background-color: #2567b2;
+    width: 18vw;
+    height: 3vw;
+}
+
+.weight-button:hover {
+    transform:
+    scale(1.1);
+}
+
+.homelogo {
+    background-color: white; 
+    border-style:none; 
+    margin-top: 1vw;
+}
+.homelogo:hover {
+    transform:
+    scale(1.1);
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 10vw;
+    }
+
+    .weight-button {
+        width: 80vw;
+        height: 16vw;
+        font-size: 5.3vw;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .homelogo {
+        background-color: white; 
+        border-style:none; 
+        
+    }
+}
